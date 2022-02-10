@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="helper.Listenner"></listener>
+    </listeners>
+    <test name="ChromeTest" verbose="1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.TC_01_VeryfyLoginPage"></class>
+            <class name="tests.TC_02_VerifyLoginSuccessfully"></class>
+            <class name="tests.TC_03_VerifyProductCategoriesPage"></class>
+            <class name="tests.TC_03_1_VerifyNameRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_03_2_VerifyImageRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_04_VerifyCodeRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_05_VerifyProductsPage"></class>
+            <class name="tests.TC_06_VerifyNameRequiredFieldInProductsPage"></class>
+            <class name="tests.TC_07_VerifyImageRequiredFieldInProductsPage"></class>
+            <class name="tests.TC_08_VerifyCreateAttributeGroupPage"></class>
+            <class name="tests.TC_09_VerifyCreateNewAttributeGroup"></class>
+            <class name="tests.TC_10_VerifyNewCreateAttribute"></class>
+
+        </classes>
+    </test>
+    <test name="FirefoxTest" verbose="1">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.TC_01_VeryfyLoginPage"></class>
+            <class name="tests.TC_02_VerifyLoginSuccessfully"></class>
+            <class name="tests.TC_03_VerifyProductCategoriesPage"></class>
+            <class name="tests.TC_03_1_VerifyNameRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_03_2_VerifyImageRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_04_VerifyCodeRequiredFieldInProductCategoriesPage"></class>
+            <class name="tests.TC_05_VerifyProductsPage"></class>
+            <class name="tests.TC_06_VerifyNameRequiredFieldInProductsPage"></class>
+            <class name="tests.TC_07_VerifyImageRequiredFieldInProductsPage"></class>
+            <class name="tests.TC_08_VerifyCreateAttributeGroupPage"></class>
+            <class name="tests.TC_09_VerifyCreateNewAttributeGroup"></class>
+            <class name="tests.TC_10_VerifyNewCreateAttribute"></class>
+        </classes>
+    </test>
+</suite>
